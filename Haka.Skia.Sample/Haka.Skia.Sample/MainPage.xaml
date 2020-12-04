@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:skia="clr-namespace:Haka.Skia;assembly=Haka.Skia"
+    x:Class="Haka.Skia.Sample.MainPage"
+    >
+    <ScrollView>
+        <StackLayout
+            Spacing="20"
+            Padding="50"
+            >
+            <skia:SvgSkia
+                Size="100"
+                Source="person.svg"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Orange"
+                />
+            <skia:SvgSkia
+                Size="100"
+                Source="spinner.svg"
+                HorizontalOptions="CenterAndExpand"
+                />
+            <skia:ImageSkia
+                Aspect="AspectFit"
+                Source="demo.png"
+                HeightRequest="100"
+                />
+            <skia:ShadowFrameSkia
+                BackgroundColor="Pink"              
+                CornerRadius="15"
+                ShadowColor="Green"
+                ShadowThickness="15"
+                >
+                <StackLayout Padding="10">
+                    <Label Text="ONE" />
+                    <Label Text="TWO" />
+                    <Label Text="THREE" />
+                </StackLayout>
+            </skia:ShadowFrameSkia>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
