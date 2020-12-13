@@ -4,7 +4,7 @@
     <Authors>Robin Zevallos</Authors>
     <Description>Set of custom controls with SkiaSharp for Xamarin.Forms</Description>
     <PackageTags>Xamarin.Forms, Xamarin, SkiaSharp, Control, Custom, Component</PackageTags>
-    <Version>0.1.1</Version>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,8 +15,4 @@
     <None Include="icon.png" Pack="true" PackagePath=""/>
   </ItemGroup>
   
-  <PropertyGroup>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageOutputPath>$(SolutionDir)nugets</PackageOutputPath>
-  </PropertyGroup>
 </Project>

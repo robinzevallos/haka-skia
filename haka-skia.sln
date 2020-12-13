@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haka.Skia", "Haka.Skia\Haka.Skia.csproj", "{18E85541-EE28-4202-891B-5C5BDD0FED1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haka.Skia", "Haka.Skia\Haka.Skia.csproj", "{18E85541-EE28-4202-891B-5C5BDD0FED1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haka.Skia.Sample.Android", "Haka.Skia.Sample\Haka.Skia.Sample.Android\Haka.Skia.Sample.Android.csproj", "{94A61195-945C-4DED-8198-B3E8354495A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haka.Skia.Sample.iOS", "Haka.Skia.Sample\Haka.Skia.Sample.iOS\Haka.Skia.Sample.iOS.csproj", "{DD571B69-5266-4F57-BA32-34DD7A61B761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haka.Skia.Sample", "Haka.Skia.Sample\Haka.Skia.Sample\Haka.Skia.Sample.csproj", "{D7490730-0BFF-4846-9849-02F50CAE8595}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haka.Skia.Sample", "Haka.Skia.Sample\Haka.Skia.Sample\Haka.Skia.Sample.csproj", "{D7490730-0BFF-4846-9849-02F50CAE8595}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{BA6A6938-7DDB-480E-9842-5F3723B9AD81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haka.Skia.Test", "Haka.Skia.Test\Haka.Skia.Test.csproj", "{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,26 @@ Global
 		{D7490730-0BFF-4846-9849-02F50CAE8595}.Release|x64.Build.0 = Release|Any CPU
 		{D7490730-0BFF-4846-9849-02F50CAE8595}.Release|x86.ActiveCfg = Release|Any CPU
 		{D7490730-0BFF-4846-9849-02F50CAE8595}.Release|x86.Build.0 = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|x64.Build.0 = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Debug|x86.Build.0 = Debug|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|iPhone.Build.0 = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|x64.ActiveCfg = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|x64.Build.0 = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DFA2CB9-9B7C-453C-8F8D-B515904A4D1C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
