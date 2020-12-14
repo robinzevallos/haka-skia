@@ -1,4 +1,5 @@
 ﻿using Haka.Core;
+using Haka.Skia.Infrastructure;
 using Kasay.BindableProperty;
 using SkiaSharp.Extended.Svg;
 using SkiaSharp.Views.Forms;
@@ -8,7 +9,7 @@ using System.Net.Http;
 
 namespace Haka.Skia
 {
-    public class SvgSkia : SKCanvasView
+    public class SvgSkia : SKCanvasViewCustom
     {
         private readonly SKSvg skSvg = new SKSvg();
         static readonly HttpClient httpClient = httpClient ?? new HttpClient();

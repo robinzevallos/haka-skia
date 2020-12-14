@@ -1,4 +1,5 @@
 ﻿using Haka.Core;
+using Haka.Skia.Infrastructure;
 using Kasay.BindableProperty;
 using SkiaSharp;
 using SkiaSharp.Views.Forms;
@@ -9,7 +10,7 @@ namespace Haka.Skia
 {
     public class ShadowFrameSkia : ContentView
     {
-        readonly SKCanvasView canvasView = new SKCanvasView();
+        readonly SKCanvasViewCustom canvasView = new SKCanvasViewCustom();
         Color backgroundColorShadow;
         View contentOriginal;
         Boolean isShadowWithBackgroundColor;
@@ -38,7 +39,9 @@ namespace Haka.Skia
             CornerRadius = 20;
             ShadowThickness = 5;
 
+#if __ANDROID__ || __IOS__
             canvasView.PaintSurface += (s, e) => OnPaintSurface(e);
+#endif
         }
 
         void OnPaintSurface(SKPaintSurfaceEventArgs e)

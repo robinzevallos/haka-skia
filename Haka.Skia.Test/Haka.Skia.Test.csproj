@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Haka.Skia.Sample\Haka.Skia.Sample\Haka.Skia.Sample.csproj" />
     <ProjectReference Include="..\Haka.Skia\Haka.Skia.csproj" />
   </ItemGroup>
 

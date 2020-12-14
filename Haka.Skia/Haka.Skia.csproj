@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.1.2">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;MonoAndroid90;Xamarin.iOS10;</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,30 @@
     <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.2" />
     <PackageReference Include="Haka.Core" Version="0.1.7-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <compile Remove="**\*.android.cs" />
+    <compile Remove="**\*.android.*.cs" />
+    <Compile Remove="**\*.ios.cs" />
+    <Compile Remove="**\*.ios.*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="**\*.android.cs" />
+    <None Include="**\*.android.*.cs" />
+    <None Include="**\*.ios.cs" />
+    <None Include="**\*.ios.*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+    <Compile Include="**\*.android.cs" />
+    <Compile Include="**\*.android.*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+    <Compile Include="**\*.ios.cs" />
+    <Compile Include="**\*.ios.*.cs" />
   </ItemGroup>
 
 </Project>

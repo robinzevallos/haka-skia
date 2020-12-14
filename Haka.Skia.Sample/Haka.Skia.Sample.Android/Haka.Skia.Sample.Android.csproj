@@ -89,6 +89,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Haka.Skia\Haka.Skia.csproj">
+      <Project>{18e85541-ee28-4202-891b-5c5bdd0fed1a}</Project>
+      <Name>Haka.Skia</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Haka.Skia.Sample\Haka.Skia.Sample.csproj">
       <Project>{27C5322E-E9BF-4196-A96F-505393826A7E}</Project>
       <Name>Haka.Skia.Sample</Name>

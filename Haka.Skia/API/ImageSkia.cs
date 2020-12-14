@@ -1,4 +1,5 @@
 ﻿using Haka.Core;
+using Haka.Skia.Infrastructure;
 using Kasay.BindableProperty;
 using SkiaSharp;
 using SkiaSharp.Views.Forms;
@@ -10,7 +11,7 @@ using Xamarin.Forms;
 
 namespace Haka.Skia
 {
-    public class ImageSkia : SKCanvasView
+    public class ImageSkia : SKCanvasViewCustom
     {
         static readonly HttpClient httpClient = httpClient ?? new HttpClient();
         static readonly Dictionary<String, SKBitmap> bitmapsStore = bitmapsStore ?? new Dictionary<String, SKBitmap>();
